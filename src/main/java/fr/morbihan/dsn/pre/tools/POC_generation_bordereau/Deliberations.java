@@ -44,7 +44,7 @@ public class Deliberations {
 
     static void run() throws Exception {
         SEDALibProgressLogger pl = new SEDALibProgressLogger(LoggerFactory.getLogger("sedalibsamples"), SEDALibProgressLogger.OBJECTS_GROUP);
-        try (SIPBuilder sb = new SIPBuilder("sedalib-samples/samples/deliberations.zip", pl)) {
+        try (SIPBuilder sb = new SIPBuilder("deliberations/deliberations.zip", pl)) {
             String sessionId = "Session";
             String ArchiveTitle = "Transfert des délibérations et des rapports des sessions du département et des commissions permanentes.";
             String sessionTitle = "Commission permanente du 04/07/2022";

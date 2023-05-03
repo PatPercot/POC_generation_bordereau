@@ -63,6 +63,15 @@
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>
           <version>3.0.2</version>
+	      <configuration>
+	        <archive>
+	          <manifest>
+	            <addClasspath>true</addClasspath>
+	            <classpathPrefix>lib/</classpathPrefix>
+	            <mainClass>fr.morbihan.dsn.pre.tools.POC_generation_bordereau.App</mainClass>
+	          </manifest>
+	        </archive>
+	      </configuration>
         </plugin>
         <plugin>
           <artifactId>maven-install-plugin</artifactId>
